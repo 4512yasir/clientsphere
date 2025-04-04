@@ -1,113 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClientSphere – Client Management System</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ClientSphere – Client Management System</title>
 </head>
 <body>
-    <header>
+  <header>
+    <h1>ClientSphere 🏢</h1>
+  </header>
 
-    </header>
-    <nav>
+  <nav>
     <ul>
-        <li><a href="#DASHBOARD">Dashboard</a></li>
-        <li><a href="#PROJECT">Projects</a></li>
-        <li><a href="#CLIENTS">Clients</a></li>
-        <li><a href="#INVOICES">Invoices</a></li>
+      <li><a href="#DASHBOARD">DASHBOARD</a></li>
+      <li><a href="#PROJECT">PROJECTS</a></li>
+      <li><a href="#CLIENTS">CLIENTS</a></li>
+      <li><a href="#INVOICES">INVOICES</a></li>
     </ul>
-    </nav>
-    <main>
-        <!-- Dashboard section -->
-        <section id="DASHBOARD">
-            <h2>Dashboard Overview</h2>
-            <div class="dashboard-cards">
-                <div class="card">
-                  <h3>Total Clients</h3>
-                  <p>24</p>
-                </div>
-                <div class="card">
-                  <h3>Active Projects</h3>
-                  <p>12</p>
-                </div>
-                <div class="card">
-                  <h3>Pending Invoices</h3>
-                  <p>6</p>
-                </div>
-              </div>
-          </section>
-          <!-- client section -->
-          <section id="CLIENTS">
-            <h2>Clients</h2>
-            <h2>Clients</h2>
-            <table>
-              <thead>
-                <tr>
-                  <th>Client Name</th>
-                  <th>Email</th>
-                  <th>Phone</th>
-                  <th>Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Acme Corp</td>
-                  <td>acme@example.com</td>
-                  <td>123-456-7890</td>
-                  <td>Active</td>
-                </tr>
-                <tr>
-                  <td>Beta Ltd</td>
-                  <td>beta@example.com</td>
-                  <td>098-765-4321</td>
-                  <td>Inactive</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-          <!-- project section  -->
-          <section id="PROJECT">
-            <h2>Projects</h2>
-            <ul>
-              <li>Website Redesign – Acme Corp</li>
-              <li>Mobile App Development – Beta Ltd</li>
-              <li>CRM Integration – Gamma Inc</li>
-            </ul>
-          </section>
-          <!-- invoice section  -->
-          <section id="INVOICES">
-            <h2>Invoices</h2>
-            <table>
-                <thead>
-                  <tr>
-                    <th>Invoice #</th>
-                    <th>Client</th>
-                    <th>Amount</th>
-                    <th>Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>#101</td>
-                    <td>Acme Corp</td>
-                    <td>$1200</td>
-                    <td>Paid</td>
-                  </tr>
-                  <tr>
-                    <td>#102</td>
-                    <td>Beta Ltd</td>
-                    <td>$950</td>
-                    <td>Unpaid</td>
-                  </tr>
-                </tbody>
-              </table>
-          </section>
-          
+  </nav>
 
-    </main>
+  <main>
+    <!-- DASHBOARD SECTION -->
+    <section id="DASHBOARD">
+      <h2>Dashboard Overview</h2>
+      <div class="dashboard-cards">
+        <div class="card">
+          <h3>Total Clients</h3>
+          <p>24</p>
+        </div>
+        <div class="card">
+          <h3>Active Projects</h3>
+          <p>10</p>
+        </div>
+        <div class="card">
+          <h3>Pending Invoices</h3>
+          <p>5</p>
+        </div>
+        <div class="card">
+          <h3>Completed Projects</h3>
+          <p>12</p>
+        </div>
+      </div>
+    </section>
 
-    <footer>
-        <p>© 2025 ClientSphere. All rights reserved.</p>
-    </footer>
+    <!-- CLIENTS SECTION -->
+    <section id="CLIENTS">
+      <h2>Clients</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Client Name</th>
+            <th>Email</th>
+            <th>Company</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jane Doe</td>
+            <td>jane@example.com</td>
+            <td>Acme Inc.</td>
+          </tr>
+          <tr>
+            <td>John Smith</td>
+            <td>john@example.com</td>
+            <td>Smith Tech</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="PROJECT">
+      <h2>Projects</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Project Name</th>
+            <th>Status</th>
+            <th>Client</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Website Redesign</td>
+            <td>In Progress</td>
+            <td>Acme Inc.</td>
+          </tr>
+          <tr>
+            <td>Mobile App</td>
+            <td>Completed</td>
+            <td>Smith Tech</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- INVOICES SECTION -->
+    <section id="INVOICES">
+      <h2>Invoices</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Invoice ID</th>
+            <th>Client</th>
+            <th>Status</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#INV001</td>
+            <td>Acme Inc.</td>
+            <td>Pending</td>
+            <td>$1200</td>
+          </tr>
+          <tr>
+            <td>#INV002</td>
+            <td>Smith Tech</td>
+            <td>Paid</td>
+            <td>$850</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ClientSphere. All rights reserved.</p>
+  </footer>
 </body>
 </html>
