@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ClientSphere – Client Management System</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
   <header>
@@ -13,123 +13,98 @@
 
   <nav>
     <ul>
-      <li><a href="#DASHBOARD">DASHBOARD</a></li>
-      <li><a href="#PROJECT">PROJECTS</a></li>
-      <li><a href="#CLIENTS">CLIENTS</a></li>
-      <li><a href="#INVOICES">INVOICES</a></li>
+      <li><a href="#dashboard">Dashboard</a></li>
+      <li><a href="#clients">Clients</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#invoices">Invoices</a></li>
     </ul>
   </nav>
 
   <main>
-    <!-- DASHBOARD SECTION -->
-    <section id="DASHBOARD">
+    <!-- Dashboard Section -->
+    <section id="dashboard">
       <h2>Dashboard Overview</h2>
-      <div class="dashboard-cards">
+      <div class="card-container">
         <div class="card">
           <h3>Total Clients</h3>
-          <p>24</p>
+          <p>0</p>
         </div>
         <div class="card">
           <h3>Active Projects</h3>
-          <p>10</p>
+          <p>0</p>
         </div>
         <div class="card">
           <h3>Pending Invoices</h3>
-          <p>5</p>
-        </div>
-        <div class="card">
-          <h3>Completed Projects</h3>
-          <p>12</p>
+          <p>0</p>
         </div>
       </div>
     </section>
 
-    <!-- CLIENTS SECTION -->
-    <section id="CLIENTS">
-      <h2>Clients</h2>
+    <!-- Clients Section -->
+    <section id="clients">
+      <div class="section-header">
+        <h2>Clients</h2>
+        <button class="add-btn">+ Add Client</button>
+      </div>
       <table>
         <thead>
           <tr>
-            <th>Client Name</th>
+            <th>Name</th>
             <th>Email</th>
             <th>Company</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Jane Doe</td>
-            <td>jane@example.com</td>
-            <td>Acme Inc.</td>
-          </tr>
-          <tr>
-            <td>John Smith</td>
-            <td>john@example.com</td>
-            <td>Smith Tech</td>
-          </tr>
+          <!-- Empty for now -->
         </tbody>
       </table>
     </section>
 
-    <!-- PROJECTS SECTION -->
-    <section id="PROJECT">
-      <h2>Projects</h2>
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="section-header">
+        <h2>Projects</h2>
+        <button class="add-btn">+ Add Project</button>
+      </div>
       <table>
         <thead>
           <tr>
             <th>Project Name</th>
-            <th>Status</th>
             <th>Client</th>
+            <th>Status</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Website Redesign</td>
-            <td>In Progress</td>
-            <td>Acme Inc.</td>
-          </tr>
-          <tr>
-            <td>Mobile App</td>
-            <td>Completed</td>
-            <td>Smith Tech</td>
-          </tr>
+          <!-- Empty for now -->
         </tbody>
       </table>
     </section>
 
-    <!-- INVOICES SECTION -->
-    <section id="INVOICES">
-      <h2>Invoices</h2>
+    <!-- Invoices Section -->
+    <section id="invoices">
+      <div class="section-header">
+        <h2>Invoices</h2>
+        <button class="add-btn">+ Add Invoice</button>
+      </div>
       <table>
         <thead>
           <tr>
             <th>Invoice ID</th>
             <th>Client</th>
-            <th>Status</th>
             <th>Amount</th>
+            <th>Status</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>#INV001</td>
-            <td>Acme Inc.</td>
-            <td>Pending</td>
-            <td>$1200</td>
-          </tr>
-          <tr>
-            <td>#INV002</td>
-            <td>Smith Tech</td>
-            <td>Paid</td>
-            <td>$850</td>
-          </tr>
+          <!-- Empty for now -->
         </tbody>
       </table>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 ClientSphere. All rights reserved.</p>
+    <p>© 2025 ClientSphere. All rights reserved.</p>
   </footer>
-
   <script src="./js/script.js"></script>
 </body>
 </html>
